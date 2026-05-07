@@ -44,8 +44,8 @@ export default function Home() {
           <TypingTitle />
         </motion.div>
 
-        <div className="mb-8 w-full max-w-full overflow-hidden rounded-3xl border-l-4 border-cyan-400 bg-slate-900/80 p-4 shadow-2xl backdrop-blur-md sm:p-7">
-          <p className="text-base leading-8 text-slate-300 sm:text-lg">
+        <div className="mb-8 w-full max-w-full border-l-4 border-cyan-400 pl-4 sm:pl-7">
+          <p className="text-base leading-8 text-slate-200 sm:text-lg">
             I am a Mechatronics Engineering student with hands-on experience in:
           </p>
 
@@ -115,7 +115,7 @@ export default function Home() {
             className="flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-white/20 hover:scale-105"
           >
             <FaPaperPlane />
-            Let’s Talk
+            Let's Talk
           </a>
         </div>
       </motion.section>
