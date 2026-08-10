@@ -4,7 +4,9 @@ const roles = [
   "Mechatronics Engineer",
   "Embedded Systems Engineer",
   "Automation Engineer",
-  "Robotics Developer"
+  "Robotics Developer",
+  "Full Stack Developer",
+  "Backend Team Leader"
 ];
 
 export default function TypingTitle() {

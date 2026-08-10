@@ -8,6 +8,9 @@ import {
   FaTools,
   FaDatabase,
   FaGithub,
+  FaServer,
+  FaUsers,
+  FaEye,
 } from "react-icons/fa";
 import {
   SiArduino,
@@ -15,7 +18,14 @@ import {
   SiCplusplus,
   SiPython,
   SiProteus,
-  SiAutodesk,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiPrisma,
+  SiPostgresql,
+  SiStripe,
+  SiPytorch,
 } from "react-icons/si";
 
 const skills = [
@@ -152,6 +162,83 @@ const skills = [
   category: "Mechanical",
   desc: "Designing complete systems from idea to implementation.",
 },
+{
+  name: "React",
+  icon: <SiReact />,
+  level: "Advanced",
+  category: "Frontend",
+  desc: "Component-based UIs, hooks, routing, and responsive web interfaces.",
+},
+{
+  name: "Next.js",
+  icon: <SiNextdotjs />,
+  level: "Advanced",
+  category: "Frontend",
+  desc: "App Router, server components, API routes, and production builds.",
+},
+{
+  name: "Tailwind CSS",
+  icon: <SiTailwindcss />,
+  level: "Advanced",
+  category: "Frontend",
+  desc: "Utility-first styling, responsive layouts, and modern dark UI design.",
+},
+{
+  name: "Node.js",
+  icon: <SiNodedotjs />,
+  level: "Advanced",
+  category: "Backend",
+  desc: "REST APIs, authentication, server logic, and backend services.",
+},
+{
+  name: "REST APIs",
+  icon: <FaServer />,
+  level: "Advanced",
+  category: "Backend",
+  desc: "Endpoint design, validation, error handling, and API documentation.",
+},
+{
+  name: "SQL & Prisma",
+  icon: <SiPrisma />,
+  level: "Advanced",
+  category: "Backend",
+  desc: "Relational schema design, migrations, and type-safe database queries.",
+},
+{
+  name: "PostgreSQL",
+  icon: <SiPostgresql />,
+  level: "Intermediate",
+  category: "Backend",
+  desc: "Relational data modeling, indexing, and production database work.",
+},
+{
+  name: "Online Payments",
+  icon: <SiStripe />,
+  level: "Intermediate",
+  category: "Backend",
+  desc: "Stripe checkout, secure card payments, and webhook-driven orders.",
+},
+{
+  name: "PyTorch",
+  icon: <SiPytorch />,
+  level: "Intermediate",
+  category: "AI",
+  desc: "Training CNN models, evaluation metrics, and image classification.",
+},
+{
+  name: "Computer Vision",
+  icon: <FaEye />,
+  level: "Intermediate",
+  category: "AI",
+  desc: "Image preprocessing, object detection, and product classification models.",
+},
+{
+  name: "Team Leadership",
+  icon: <FaUsers />,
+  level: "Advanced",
+  category: "Engineering",
+  desc: "Leading a backend team, running code reviews, planning and delivering tasks.",
+},
 
 ];
 
@@ -159,8 +246,9 @@ const stats = [
   ["Embedded Systems", "6+"],
   ["Automation & Control", "5+"],
   ["Mechanical Design", "4+"],
-  ["Programming & Tools", "5+"],
-  ["Real Projects", "15+"],
+  ["Full Stack & Backend", "8+"],
+  ["AI & Computer Vision", "2+"],
+  ["Real Projects", "20+"],
 ];
 
 const levelColors = {
@@ -214,8 +302,9 @@ export default function Skills() {
         <div className="mx-auto mt-3 h-[4px] w-20 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400"></div>
 
         <p className="mx-auto mt-5 max-w-3xl text-slate-400">
-          A practical overview of my engineering skills across embedded systems,
-          automation, robotics, mechanical design, simulations, and programming tools.
+          A practical overview of my skills across embedded systems, automation, robotics
+          and mechanical design, together with full stack web development, backend APIs,
+          online payments, and AI computer vision.
         </p>
       </div>
 
@@ -229,6 +318,9 @@ export default function Skills() {
     "Mechanical",
     "Simulation",
     "Programming",
+    "Frontend",
+    "Backend",
+    "AI",
     "Tools",
     "Engineering",
     "Control",

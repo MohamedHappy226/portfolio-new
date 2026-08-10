@@ -6,6 +6,9 @@ import {
   FaBolt,
   FaFileAlt,
   FaArrowRight,
+  FaLaptopCode,
+  FaServer,
+  FaBrain,
 } from "react-icons/fa";
 
 const services = [
@@ -75,6 +78,45 @@ const services = [
     ],
   },
   {
+    icon: <FaLaptopCode />,
+    title: "Full Stack Web Development",
+    desc: "Building complete web applications end to end, from responsive React interfaces to the database behind them.",
+    tech: ["React", "Next.js", "Tailwind", "TypeScript"],
+    features: [
+      "Responsive user interfaces",
+      "Dashboards and admin panels",
+      "E-commerce stores",
+      "Authentication and user accounts",
+      "Deployment and hosting",
+    ],
+  },
+  {
+    icon: <FaServer />,
+    title: "Backend & API Development",
+    desc: "Designing REST APIs, relational databases, and online payment flows, with a team-lead level focus on clean architecture.",
+    tech: ["Node.js", "Prisma", "PostgreSQL", "Stripe"],
+    features: [
+      "REST API design",
+      "Database schema design",
+      "Online payment integration",
+      "Authentication and security",
+      "Code review and team leadership",
+    ],
+  },
+  {
+    icon: <FaBrain />,
+    title: "AI & Computer Vision",
+    desc: "Training and deploying image classification models that recognise and categorise products from photos.",
+    tech: ["Python", "PyTorch", "OpenCV", "FastAPI"],
+    features: [
+      "Product detection and classification",
+      "Custom CNN model training",
+      "Dataset preparation and labeling",
+      "Model accuracy evaluation",
+      "Prediction API and demo UI",
+    ],
+  },
+  {
     icon: <FaFileAlt />,
     title: "Technical Documentation",
     desc: "Preparing clear reports, project documentation, wiring diagrams, calculations, and presentation-ready engineering files.",
@@ -101,8 +143,9 @@ export default function Services() {
         <div className="mx-auto mt-3 h-[4px] w-20 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400"></div>
 
         <p className="mx-auto mt-5 max-w-3xl text-slate-400">
-          Engineering services focused on embedded systems, automation,
-          robotics, mechanical design, circuit simulation, and technical documentation.
+          Engineering and software services — embedded systems, automation, robotics,
+          mechanical design and circuit simulation, plus full stack web development,
+          backend APIs, online payments, and AI computer vision.
         </p>
       </div>
 

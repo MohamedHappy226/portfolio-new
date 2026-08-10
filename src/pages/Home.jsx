@@ -12,9 +12,22 @@ export default function Home() {
     "PLC Programming",
     "IoT",
     "Mechanical Design",
+    "Full Stack Development",
+    "Backend & APIs",
+    "AI / Computer Vision",
   ];
 
-  const skills = ["Arduino", "PLC", "Robotics", "IoT", "SolidWorks", "C++"];
+  const skills = [
+    "Arduino",
+    "PLC",
+    "Robotics",
+    "SolidWorks",
+    "C++",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Python",
+  ];
 
   return (
    <main className="mx-auto flex min-h-[calc(100vh-80px)] w-full max-w-7xl flex-col-reverse items-center gap-10 px-4 py-6 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8 lg:py-16">
@@ -46,7 +59,7 @@ export default function Home() {
 
         <div className="mb-8 w-full max-w-full border-l-4 border-cyan-400 pl-4 sm:pl-7">
           <p className="text-base leading-8 text-slate-200 sm:text-lg">
-            I am a Mechatronics Engineering student with hands-on experience in:
+            I am a Mechatronics Engineer and Full Stack Developer with hands-on experience in:
           </p>
 
           <div className="mt-4 flex w-full flex-wrap gap-2">
@@ -67,14 +80,17 @@ export default function Home() {
           </p>
 
           <p className="mt-4 break-words text-base leading-8 text-slate-300 sm:text-lg">
-            I focus on creating efficient, reliable, and scalable solutions in
-            embedded systems, automation, and control engineering.
+            Alongside engineering, I build full stack web applications — React and
+            Next.js front ends, Node.js APIs, databases, and online payment systems —
+            and I currently lead the backend team at CodeExa.
           </p>
 
           <div className="mt-6 space-y-3 text-base leading-7 text-slate-300 sm:text-lg">
             <p>🚀 Turning ideas into real projects</p>
             <p>💡 Passionate about robotics & embedded systems</p>
             <p>⚙️ PLC & Automation Experience</p>
+            <p>💻 3 years freelance embedded & robotics · 1.5 years full stack</p>
+            <p>👥 Backend Team Leader at CodeExa</p>
             <p>📍 Based in Cairo, Egypt</p>
           </div>
         </div>

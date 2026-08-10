@@ -8,9 +8,19 @@ import portfolio from "../images/personal-portfolio.jpg";
 import blindHardware from "../images/blind-hardware.jpg";
 import blindProteus from "../images/blind-proteus.jpg";
 import solid from "../images/solid.jpg";
+import sneakerStore from "../images/proj-sneaker-store.svg";
+import paymentsStore from "../images/proj-payments-store.svg";
+import aiProducts from "../images/proj-ai-products.svg";
+import restaurantPos from "../images/proj-restaurant-pos.svg";
 
 const DRIVE_LINK =
   "https://drive.google.com/drive/folders/1IvTskhR8zAkkadEv0DZ3EcS4bTmR4Yrv?usp=drive_link";
+
+const DRIVE_EMBEDDED =
+  "https://drive.google.com/drive/folders/1SIwP9Lb0r3mBJOGGr_5jDptvSghBQjlr?usp=sharing";
+
+const DRIVE_MECHANICAL =
+  "https://drive.google.com/drive/folders/10jUQACMVbql1DyBvWCDTuXT6BONGsCc0?usp=sharing";
 
 const PORTFOLIO_LINK = "https://mohamed-portfolio-navn.vercel.app";
 
@@ -35,7 +45,7 @@ const projects = [
     desc: "Mechanical structure and motion system for the CNC soldering machine with practical manufacturing considerations.",
     tech: ["SolidWorks", "CNC", "Motion"],
     folder: "/Projects/Mechanical",
-    drive: DRIVE_LINK,
+    drive: DRIVE_MECHANICAL,
     code: "",
     live: "",
   },
@@ -46,7 +56,7 @@ const projects = [
     desc: "Arduino-based robot car platform using motor driver, relay control, and sensors for movement and automation tasks.",
     tech: ["Arduino", "Robotics", "L298N", "Sensors"],
     folder: "/Projects/Embedded",
-    drive: DRIVE_LINK,
+    drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
   },
@@ -57,7 +67,7 @@ const projects = [
     desc: "Bluetooth-based smart home automation using Arduino, HC-05 module, and relays to control lights and fans.",
     tech: ["Arduino", "HC-05", "Relay", "Automation"],
     folder: "/Projects/Automation",
-    drive: DRIVE_LINK,
+    drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
   },
@@ -68,7 +78,7 @@ const projects = [
     desc: "Assistive embedded system using sensors and electronics to help visually impaired users detect obstacles.",
     tech: ["Arduino", "Sensors", "Embedded"],
     folder: "/Projects/Embedded",
-    drive: DRIVE_LINK,
+    drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
   },
@@ -79,7 +89,7 @@ const projects = [
     desc: "Collection of electronic circuit simulations including motor drivers, embedded circuits, and control systems.",
     tech: ["Proteus", "Simulation", "Electronics"],
     folder: "/Projects/Embedded",
-    drive: DRIVE_LINK,
+    drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
   },
@@ -90,7 +100,7 @@ const projects = [
     desc: "Mechanical parts, assemblies, drawings, and design work created using SolidWorks.",
     tech: ["SolidWorks", "Assembly", "Drawing"],
     folder: "/Projects/Mechanical",
-    drive: DRIVE_LINK,
+    drive: DRIVE_MECHANICAL,
     code: "",
     live: "",
   },
@@ -105,6 +115,50 @@ const projects = [
     code: GITHUB_LINK,
     live: PORTFOLIO_LINK,
   },
+  {
+    title: "Sprintly — Sneaker E-Commerce Store",
+    image: sneakerStore,
+    tag: "FULL STACK",
+    desc: "A complete sneaker store built end to end: product catalog with filtering, product pages with size and colour options, a persisted cart, user accounts, and full order history backed by a relational database.",
+    tech: ["Next.js", "React", "Prisma", "Tailwind", "Auth.js"],
+    folder: "",
+    drive: "",
+    code: "",
+    live: "",
+  },
+  {
+    title: "Online Payment Store & Checkout System",
+    image: paymentsStore,
+    tag: "PAYMENTS",
+    desc: "An e-commerce store focused on the online payment flow — Stripe Checkout integration, secure card payments, webhook-driven order confirmation, and an order and invoice history for every customer.",
+    tech: ["Next.js", "Stripe", "Webhooks", "Prisma", "PostgreSQL"],
+    folder: "",
+    drive: "",
+    code: "",
+    live: "",
+  },
+  {
+    title: "AI Supermarket Product Detection & Classification",
+    image: aiProducts,
+    tag: "AI / ML",
+    desc: "A computer-vision model that detects supermarket products in an image and classifies them into categories, served through a REST API with an upload-and-predict web interface showing live confidence scores per class.",
+    tech: ["Python", "PyTorch", "CNN", "OpenCV", "FastAPI"],
+    folder: "",
+    drive: "",
+    code: "",
+    live: "",
+  },
+  {
+    title: "Restaurant & Cafe Accounting System",
+    image: restaurantPos,
+    tag: "POS / ACCOUNTING",
+    desc: "A point-of-sale and accounting system for restaurants and cafes: full menu management, order entry for dine-in, takeaway and delivery, printable invoices with discounts, service and tax, expense tracking, and daily sales and profit reports.",
+    tech: ["Next.js", "Prisma", "SQLite", "Tailwind", "RTL Arabic"],
+    folder: "",
+    drive: "",
+    code: "",
+    live: "",
+  },
 ];
 
 export default function Projects() {
@@ -118,8 +172,9 @@ export default function Projects() {
         <div className="mx-auto mt-3 h-[4px] w-20 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400"></div>
 
         <p className="mx-auto mt-5 max-w-3xl text-slate-400">
-          A showcase of my engineering projects covering embedded systems,
-          robotics, automation, mechanical design, Proteus simulations, and web development.
+          A showcase of my engineering and software projects — embedded systems,
+          robotics, automation, mechanical design and Proteus simulations, alongside
+          full stack web apps, online payment systems, and AI computer-vision models.
         </p>
       </div>
 
@@ -229,14 +284,16 @@ export default function Projects() {
                   )}
                 </div>
 
-                <a
-                  href={project.folder}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-2xl text-slate-400 transition duration-300 group-hover:translate-x-2 group-hover:text-cyan-300"
-                >
-                  <FaArrowRight />
-                </a>
+                {project.folder && (
+                  <a
+                    href={project.folder}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-2xl text-slate-400 transition duration-300 group-hover:translate-x-2 group-hover:text-cyan-300"
+                  >
+                    <FaArrowRight />
+                  </a>
+                )}
               </div>
             </div>
           </div>

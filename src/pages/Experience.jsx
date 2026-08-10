@@ -13,9 +13,63 @@ import {
   FaHandshake,
   FaExternalLinkAlt,
   FaDownload,
+  FaUsers,
+  FaLaptopCode,
+  FaRobot,
 } from "react-icons/fa";
 
 const timeline = [
+  {
+    type: "Team Leadership",
+    badgeColor: "bg-indigo-400",
+    icon: <FaUsers />,
+    title: "Backend Team Leader",
+    company: "CodeExa",
+    location: "Egypt",
+    date: "2026 - Present",
+    desc: "Leading the backend team at CodeExa — owning API architecture and database design, breaking work down across the team, reviewing pull requests, and making sure features ship to production on time.",
+    skills: ["Team Leadership", "Backend Architecture", "REST APIs", "Code Review", "Node.js", "Databases"],
+    achievements: [
+      "Led and mentored the backend development team",
+      "Defined API architecture and database schema standards",
+      "Ran code reviews and raised overall code quality",
+      "Coordinated delivery between backend and frontend",
+    ],
+  },
+  {
+    type: "Work Experience",
+    badgeColor: "bg-violet-400",
+    icon: <FaLaptopCode />,
+    title: "Full Stack Developer",
+    company: "CodeExa & Freelance",
+    location: "Cairo, Egypt",
+    date: "2025 - Present · 1.5 Years",
+    desc: "Building complete web applications end to end — React and Next.js front ends, Node.js REST APIs, relational database design, authentication, and online payment integration.",
+    skills: ["React", "Next.js", "Node.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Stripe"],
+    achievements: [
+      "Delivered full stack e-commerce platforms end to end",
+      "Integrated secure online payment and checkout flows",
+      "Designed relational schemas and REST APIs",
+      "Built responsive interfaces with React and Tailwind",
+    ],
+  },
+  {
+    type: "Freelance",
+    badgeColor: "bg-teal-400",
+    icon: <FaRobot />,
+    title: "Freelance Embedded Systems & Robotics Developer",
+    company: "Self-Employed",
+    location: "Cairo, Egypt",
+    date: "2023 - Present · 3 Years",
+    desc: "Delivering embedded systems and robotics projects for clients and student teams — microcontroller firmware, sensor and motor integration, circuit design and simulation, and hands-on hardware debugging.",
+    skills: ["Embedded C", "Arduino", "ESP32", "Robotics", "Sensors", "Motor Drivers", "Proteus"],
+    achievements: [
+      "Delivered 3 years of embedded and robotics projects for clients",
+      "Built firmware for Arduino and ESP32 based systems",
+      "Designed and simulated circuits before hardware build",
+      "Handled clients end to end from requirements to delivery",
+    ],
+  },
   {
     type: "Graduation Project",
     badgeColor: "bg-cyan-400",
@@ -273,7 +327,9 @@ export default function Experience() {
         <div className="mx-auto mt-3 h-[4px] w-20 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400"></div>
 
         <p className="mx-auto mt-5 max-w-3xl text-slate-400">
-          Mechatronics Engineer with strong hands-on engineering experience and a powerful sales & client communication background.
+          Mechatronics Engineer and Full Stack Developer — 3 years of freelance embedded systems
+          and robotics, 1.5 years building full stack web applications, and currently leading the
+          backend team at CodeExa.
         </p>
       </div>
 

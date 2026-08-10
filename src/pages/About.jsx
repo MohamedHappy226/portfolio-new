@@ -48,8 +48,14 @@ export default function About() {
 
             <span>|</span>
 
+            <span className="font-bold text-slate-200">
+              Full Stack Developer
+            </span>
+
+            <span>|</span>
+
             <span className="text-slate-400">
-              Embedded Systems & Automation
+              Backend Team Leader @ CodeExa
             </span>
           </div>
 
@@ -73,6 +79,17 @@ export default function About() {
   developed control systems using PLC, and designed mechanical systems
   using SolidWorks. I focus on building efficient and scalable solutions
   that integrate hardware and software into real-world applications.
+
+  <br /><br />
+
+  I have spent
+  <span className="mx-1 font-bold text-cyan-300">3 years working freelance</span>
+  on embedded systems and robotics projects, and
+  <span className="mx-1 font-bold text-cyan-300">1.5 years as a Full Stack Developer</span>
+  building complete web applications with React, Next.js, Node.js and online payment
+  integration. I am currently the
+  <span className="mx-1 font-bold text-cyan-300">Backend Team Leader at CodeExa</span>,
+  where I own the API architecture and lead the backend team.
 
   <br /><br />
 
