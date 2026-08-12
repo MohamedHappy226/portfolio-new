@@ -8,10 +8,10 @@ import portfolio from "../images/personal-portfolio.jpg";
 import blindHardware from "../images/blind-hardware.jpg";
 import blindProteus from "../images/blind-proteus.jpg";
 import solid from "../images/solid.jpg";
-import sneakerStore from "../images/proj-sneaker-store.svg";
-import paymentsStore from "../images/proj-payments-store.svg";
-import aiProducts from "../images/proj-ai-products.svg";
-import restaurantPos from "../images/proj-restaurant-pos.svg";
+import sneakerStore from "../images/shot-sneaker-store.jpg";
+import paymentsStore from "../images/shot-payments-store.jpg";
+import aiProducts from "../images/shot-ai-products.jpg";
+import restaurantPos from "../images/shot-restaurant-pos.jpg";
 
 const DRIVE_LINK =
   "https://drive.google.com/drive/folders/1IvTskhR8zAkkadEv0DZ3EcS4bTmR4Yrv?usp=drive_link";
@@ -25,6 +25,8 @@ const DRIVE_MECHANICAL =
 const PORTFOLIO_LINK = "https://mohamed-portfolio-navn.vercel.app";
 
 const GITHUB_LINK = "https://github.com/MohamedHappy226/mohamed-portfolio";
+
+const SPRINTLY_LIVE = "https://sprintly-store-mohamedhappy226s-projects.vercel.app";
 
 const projects = [
   {
@@ -121,10 +123,10 @@ const projects = [
     tag: "FULL STACK",
     desc: "A complete sneaker store built end to end: product catalog with filtering, product pages with size and colour options, a persisted cart, user accounts, and full order history backed by a relational database.",
     tech: ["Next.js", "React", "Prisma", "Tailwind", "Auth.js"],
-    folder: "",
+    folder: SPRINTLY_LIVE,
     drive: "",
     code: "",
-    live: "",
+    live: SPRINTLY_LIVE,
   },
   {
     title: "Online Payment Store & Checkout System",
@@ -138,11 +140,11 @@ const projects = [
     live: "",
   },
   {
-    title: "AI Supermarket Product Detection & Classification",
+    title: "AI Supermarket Product Classifier",
     image: aiProducts,
     tag: "AI / ML",
-    desc: "A computer-vision model that detects supermarket products in an image and classifies them into categories, served through a REST API with an upload-and-predict web interface showing live confidence scores per class.",
-    tech: ["Python", "PyTorch", "CNN", "OpenCV", "FastAPI"],
+    desc: "A convolutional neural network that recognises supermarket products from a photo across 81 grocery items — naming the exact product, its product type, and its aisle. MobileNetV3 fine-tuned in PyTorch and served through a FastAPI REST API with a drag-and-drop demo showing live confidence scores.",
+    tech: ["Python", "PyTorch", "CNN", "Transfer Learning", "FastAPI"],
     folder: "",
     drive: "",
     code: "",

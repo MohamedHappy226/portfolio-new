@@ -193,6 +193,20 @@ const timeline = [
 
 const certificates = [
   {
+    title: "AI & Data Science Diploma",
+    issuer: "Dotpy",
+    date: "May 2025",
+    image: "/certificates/dotpy-ai-datascience.pdf",
+    tags: ["AI", "Data Science", "Python"],
+  },
+  {
+    title: "Elements of AI — Tech Pathways MENA",
+    issuer: "Village Capital & University of Helsinki, supported by Google.org",
+    date: "2025",
+    image: "/certificates/elements-of-ai-google.pdf",
+    tags: ["AI", "Google.org", "MinnaLearn"],
+  },
+  {
     title: "Skill Lync Automotive Electronics Workshop",
     issuer: "Skill Lync",
     date: "June 2025",
