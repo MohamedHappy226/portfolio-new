@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -58,6 +59,9 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
+          {/* vercel.json rewrites every unmatched path to index.html, so without
+              this the router renders nothing and the page looks broken. */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

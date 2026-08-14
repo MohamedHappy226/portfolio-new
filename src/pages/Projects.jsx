@@ -13,16 +13,13 @@ import paymentsStore from "../images/shot-payments-store.jpg";
 import aiProducts from "../images/shot-ai-products.jpg";
 import restaurantPos from "../images/shot-restaurant-pos.jpg";
 
-const DRIVE_LINK =
-  "https://drive.google.com/drive/folders/1IvTskhR8zAkkadEv0DZ3EcS4bTmR4Yrv?usp=drive_link";
-
 const DRIVE_EMBEDDED =
   "https://drive.google.com/drive/folders/1SIwP9Lb0r3mBJOGGr_5jDptvSghBQjlr?usp=sharing";
 
 const DRIVE_MECHANICAL =
   "https://drive.google.com/drive/folders/10jUQACMVbql1DyBvWCDTuXT6BONGsCc0?usp=sharing";
 
-const PORTFOLIO_LINK = "https://mohamed-portfolio-navn.vercel.app";
+const PORTFOLIO_LINK = "https://portfolio-new-peach-iota.vercel.app";
 
 const GITHUB_LINK = "https://github.com/MohamedHappy226/mohamed-portfolio";
 
@@ -37,8 +34,8 @@ const projects = [
     tag: "GRADUATION",
     desc: "Automated CNC soldering and dispensing machine integrating mechanical design, embedded control, and automation concepts.",
     tech: ["CNC", "Arduino", "Embedded", "Mechanical"],
-    folder: "/Projects/Graduation",
-    drive: DRIVE_LINK,
+    folder: DRIVE_MECHANICAL,
+    drive: DRIVE_MECHANICAL,
     code: "",
     live: "",
   },
@@ -48,7 +45,7 @@ const projects = [
     tag: "MECHANICAL",
     desc: "Mechanical structure and motion system for the CNC soldering machine with practical manufacturing considerations.",
     tech: ["SolidWorks", "CNC", "Motion"],
-    folder: "/Projects/Mechanical",
+    folder: DRIVE_MECHANICAL,
     drive: DRIVE_MECHANICAL,
     code: "",
     live: "",
@@ -59,7 +56,7 @@ const projects = [
     tag: "ROBOTICS",
     desc: "Arduino-based robot car platform using motor driver, relay control, and sensors for movement and automation tasks.",
     tech: ["Arduino", "Robotics", "L298N", "Sensors"],
-    folder: "/Projects/Embedded",
+    folder: DRIVE_EMBEDDED,
     drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
@@ -70,7 +67,7 @@ const projects = [
     tag: "AUTOMATION",
     desc: "Bluetooth-based smart home automation using Arduino, HC-05 module, and relays to control lights and fans.",
     tech: ["Arduino", "HC-05", "Relay", "Automation"],
-    folder: "/Projects/Automation",
+    folder: DRIVE_EMBEDDED,
     drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
@@ -81,7 +78,7 @@ const projects = [
     tag: "EMBEDDED",
     desc: "Assistive embedded system using sensors and electronics to help visually impaired users detect obstacles.",
     tech: ["Arduino", "Sensors", "Embedded"],
-    folder: "/Projects/Embedded",
+    folder: DRIVE_EMBEDDED,
     drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
@@ -92,7 +89,7 @@ const projects = [
     tag: "PROTEUS",
     desc: "Collection of electronic circuit simulations including motor drivers, embedded circuits, and control systems.",
     tech: ["Proteus", "Simulation", "Electronics"],
-    folder: "/Projects/Embedded",
+    folder: DRIVE_EMBEDDED,
     drive: DRIVE_EMBEDDED,
     code: "",
     live: "",
@@ -103,7 +100,7 @@ const projects = [
     tag: "SOLIDWORKS",
     desc: "Mechanical parts, assemblies, drawings, and design work created using SolidWorks.",
     tech: ["SolidWorks", "Assembly", "Drawing"],
-    folder: "/Projects/Mechanical",
+    folder: DRIVE_MECHANICAL,
     drive: DRIVE_MECHANICAL,
     code: "",
     live: "",
@@ -115,7 +112,7 @@ const projects = [
     desc: "A complete responsive portfolio website fully designed and developed by me using React, Tailwind CSS, Node.js, MongoDB, and email integration.",
     tech: ["React", "Tailwind", "Node.js", "MongoDB"],
     folder: PORTFOLIO_LINK,
-    drive: DRIVE_LINK,
+    drive: "",
     code: GITHUB_LINK,
     live: PORTFOLIO_LINK,
   },
