@@ -28,6 +28,8 @@ const GITHUB_LINK = "https://github.com/MohamedHappy226/mohamed-portfolio";
 
 const SPRINTLY_LIVE = "https://sprintly-store-mohamedhappy226s-projects.vercel.app";
 
+const GH = "https://github.com/MohamedHappy226";
+
 const projects = [
   {
     title: "Graduation Project: Automated CNC Soldering Machine",
@@ -125,7 +127,7 @@ const projects = [
     tech: ["Next.js", "React", "Prisma", "Tailwind", "Auth.js"],
     folder: SPRINTLY_LIVE,
     drive: "",
-    code: "",
+    code: `${GH}/sprintly-sneaker-store`,
     live: SPRINTLY_LIVE,
   },
   {
@@ -134,9 +136,9 @@ const projects = [
     tag: "PAYMENTS",
     desc: "An e-commerce store focused on the online payment flow — Stripe Checkout integration, secure card payments, webhook-driven order confirmation, and an order and invoice history for every customer.",
     tech: ["Next.js", "Stripe", "Webhooks", "Prisma", "PostgreSQL"],
-    folder: "",
+    folder: `${GH}/maren-payment-store`,
     drive: "",
-    code: "",
+    code: `${GH}/maren-payment-store`,
     live: "",
   },
   {
@@ -145,9 +147,9 @@ const projects = [
     tag: "AI / ML",
     desc: "A convolutional neural network that recognises supermarket products from a photo across 81 grocery items — naming the exact product, its product type, and its aisle. MobileNetV3 fine-tuned in PyTorch and served through a FastAPI REST API with a drag-and-drop demo showing live confidence scores.",
     tech: ["Python", "PyTorch", "CNN", "Transfer Learning", "FastAPI"],
-    folder: "",
+    folder: `${GH}/market-vision-ai`,
     drive: "",
-    code: "",
+    code: `${GH}/market-vision-ai`,
     live: "",
   },
   {
@@ -156,9 +158,9 @@ const projects = [
     tag: "POS / ACCOUNTING",
     desc: "A point-of-sale and accounting system for restaurants and cafes: full menu management, order entry for dine-in, takeaway and delivery, printable invoices with discounts, service and tax, expense tracking, and daily sales and profit reports.",
     tech: ["Next.js", "Prisma", "SQLite", "Tailwind", "RTL Arabic"],
-    folder: "",
+    folder: `${GH}/daftar-restaurant-pos`,
     drive: "",
-    code: "",
+    code: `${GH}/daftar-restaurant-pos`,
     live: "",
   },
 ];
