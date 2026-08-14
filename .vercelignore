@@ -1,0 +1,10 @@
+# public/Projects holds ~670 MB of raw engineering artefacts — TIA Portal
+# runtime data, HMI dumps and screen-recording MP4s (one is 171 MB). None of
+# it is committed to git, so it has never been part of a deployment; listing
+# it here keeps CLI deploys the same size as the Git ones instead of timing
+# out on the upload.
+public/Projects
+
+node_modules
+dist
+.git
