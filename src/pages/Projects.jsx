@@ -23,7 +23,7 @@ const PORTFOLIO_LINK = "https://portfolio-new-peach-iota.vercel.app";
 
 const GITHUB_LINK = "https://github.com/MohamedHappy226/mohamed-portfolio";
 
-const SPRINTLY_LIVE = "https://sprintly-store-mohamedhappy226s-projects.vercel.app";
+const SPRINTLY_LIVE = "https://sprintly-store.vercel.app";
 
 const GH = "https://github.com/MohamedHappy226";
 
