@@ -27,3 +27,6 @@ dist-ssr
 *.avi
 *.mkv
 public/Projects/
+
+.vercel
+.env*

@@ -25,6 +25,8 @@ const GITHUB_LINK = "https://github.com/MohamedHappy226/mohamed-portfolio";
 
 const SPRINTLY_LIVE = "https://sprintly-store.vercel.app";
 
+const MARKET_VISION_LIVE = "https://market-vision-ten.vercel.app";
+
 const GH = "https://github.com/MohamedHappy226";
 
 const projects = [
@@ -142,12 +144,12 @@ const projects = [
     title: "AI Supermarket Product Classifier",
     image: aiProducts,
     tag: "AI / ML",
-    desc: "A convolutional neural network that recognises supermarket products from a photo across 81 grocery items — naming the exact product, its product type, and its aisle. MobileNetV3 fine-tuned in PyTorch and served through a FastAPI REST API with a drag-and-drop demo showing live confidence scores.",
-    tech: ["Python", "PyTorch", "CNN", "Transfer Learning", "FastAPI"],
-    folder: `${GH}/market-vision-ai`,
+    desc: "A convolutional neural network that recognises supermarket products from a photo across 81 grocery items — naming the exact product, its product type, and its aisle. MobileNetV3 fine-tuned in PyTorch to 74.8% exact-product and 96% top-5 accuracy, then exported to ONNX so the live demo runs entirely in your browser: no server, no upload, ~55 ms per photo.",
+    tech: ["Python", "PyTorch", "CNN", "Transfer Learning", "ONNX", "FastAPI"],
+    folder: MARKET_VISION_LIVE,
     drive: "",
     code: `${GH}/market-vision-ai`,
-    live: "",
+    live: MARKET_VISION_LIVE,
   },
   {
     title: "Restaurant & Cafe Accounting System",
