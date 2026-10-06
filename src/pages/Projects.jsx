@@ -12,6 +12,9 @@ import sneakerStore from "../images/shot-sneaker-store.jpg";
 import paymentsStore from "../images/shot-payments-store.jpg";
 import aiProducts from "../images/shot-ai-products.jpg";
 import restaurantPos from "../images/shot-restaurant-pos.jpg";
+import nafhaStore from "../images/arabic-stores/nafha.jpg";
+import voltStore from "../images/arabic-stores/volt.jpg";
+import nadraStore from "../images/arabic-stores/nadra.jpg";
 
 const DRIVE_EMBEDDED =
   "https://drive.google.com/drive/folders/1SIwP9Lb0r3mBJOGGr_5jDptvSghBQjlr?usp=sharing";
@@ -32,7 +35,7 @@ const ARABIC_STORES = [
     title: "نفحة — متجر عطور ودهن عود",
     tag: "E-COMMERCE DEMO",
     market: "السوق السعودي",
-    accent: "from-amber-500 via-orange-500 to-rose-500",
+    image: nafhaStore,
     desc: "نموذج متجر عربي فاخر للعطور ودهن العود، بهوية موجهة للسوق السعودي وتجربة تسوق RTL كاملة ومتوافقة مع الموبايل.",
     tech: ["Arabic RTL", "Responsive", "Product Variants", "Cart"],
     live: "https://arabic-stores-demo.vercel.app/nafha/",
@@ -41,7 +44,7 @@ const ARABIC_STORES = [
     title: "فولت — متجر إلكترونيات وإكسسوارات",
     tag: "E-COMMERCE DEMO",
     market: "السوق المصري",
-    accent: "from-cyan-500 via-blue-600 to-indigo-600",
+    image: voltStore,
     desc: "نموذج متجر إلكترونيات وإكسسوارات موجه للسوق المصري، يتضمن تصفح المنتجات والفلاتر والسلة وإتمام الطلب.",
     tech: ["Arabic RTL", "Filtering", "Side Cart", "Coupons"],
     live: "https://arabic-stores-demo.vercel.app/volt/",
@@ -50,7 +53,7 @@ const ARABIC_STORES = [
     title: "نضرة — متجر عناية بالبشرة",
     tag: "E-COMMERCE DEMO",
     market: "السوق الإماراتي",
-    accent: "from-emerald-500 via-teal-500 to-cyan-600",
+    image: nadraStore,
     desc: "نموذج متجر لمنتجات العناية بالبشرة بهوية هادئة موجهة للسوق الإماراتي، مع صفحة منتج وسلة وكوبونات وشراء متجاوب.",
     tech: ["Arabic RTL", "Mobile First", "Product Options", "Checkout"],
     live: "https://arabic-stores-demo.vercel.app/nadra/",
@@ -194,7 +197,6 @@ const projects = [
   },
   ...ARABIC_STORES.map((store) => ({
     ...store,
-    image: null,
     folder: store.live,
     drive: "",
     code: "",
