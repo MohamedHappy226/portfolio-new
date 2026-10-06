@@ -9,6 +9,7 @@ import {
   FaLaptopCode,
   FaServer,
   FaBrain,
+  FaShoppingBag,
 } from "react-icons/fa";
 
 const services = [
@@ -114,6 +115,19 @@ const services = [
       "Dataset preparation and labeling",
       "Model accuracy evaluation",
       "Prediction API and demo UI",
+    ],
+  },
+  {
+    icon: <FaShoppingBag />,
+    title: "WooCommerce Store Design",
+    desc: "Redesigning Arabic WooCommerce stores into fast, mobile-first shopping experiences that match the brand and target market.",
+    tech: ["WooCommerce", "WordPress", "RTL Arabic", "Responsive Design"],
+    features: [
+      "Home, category, product, cart and checkout pages",
+      "Custom product cards, filters and navigation",
+      "Arabic / English and RTL support",
+      "Performance and mobile optimisation",
+      "Two revision rounds and post-launch support",
     ],
   },
   {

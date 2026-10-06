@@ -27,6 +27,36 @@ const SPRINTLY_LIVE = "https://sprintly-store.vercel.app";
 
 const MARKET_VISION_LIVE = "https://market-vision-ten.vercel.app";
 
+const ARABIC_STORES = [
+  {
+    title: "نفحة — متجر عطور ودهن عود",
+    tag: "E-COMMERCE DEMO",
+    market: "السوق السعودي",
+    accent: "from-amber-500 via-orange-500 to-rose-500",
+    desc: "نموذج متجر عربي فاخر للعطور ودهن العود، بهوية موجهة للسوق السعودي وتجربة تسوق RTL كاملة ومتوافقة مع الموبايل.",
+    tech: ["Arabic RTL", "Responsive", "Product Variants", "Cart"],
+    live: "https://arabic-stores-demo.vercel.app/nafha/",
+  },
+  {
+    title: "فولت — متجر إلكترونيات وإكسسوارات",
+    tag: "E-COMMERCE DEMO",
+    market: "السوق المصري",
+    accent: "from-cyan-500 via-blue-600 to-indigo-600",
+    desc: "نموذج متجر إلكترونيات وإكسسوارات موجه للسوق المصري، يتضمن تصفح المنتجات والفلاتر والسلة وإتمام الطلب.",
+    tech: ["Arabic RTL", "Filtering", "Side Cart", "Coupons"],
+    live: "https://arabic-stores-demo.vercel.app/volt/",
+  },
+  {
+    title: "نضرة — متجر عناية بالبشرة",
+    tag: "E-COMMERCE DEMO",
+    market: "السوق الإماراتي",
+    accent: "from-emerald-500 via-teal-500 to-cyan-600",
+    desc: "نموذج متجر لمنتجات العناية بالبشرة بهوية هادئة موجهة للسوق الإماراتي، مع صفحة منتج وسلة وكوبونات وشراء متجاوب.",
+    tech: ["Arabic RTL", "Mobile First", "Product Options", "Checkout"],
+    live: "https://arabic-stores-demo.vercel.app/nadra/",
+  },
+];
+
 const GH = "https://github.com/MohamedHappy226";
 
 const projects = [
@@ -162,6 +192,13 @@ const projects = [
     code: `${GH}/daftar-restaurant-pos`,
     live: "",
   },
+  ...ARABIC_STORES.map((store) => ({
+    ...store,
+    image: null,
+    folder: store.live,
+    drive: "",
+    code: "",
+  })),
 ];
 
 export default function Projects() {
@@ -177,7 +214,8 @@ export default function Projects() {
         <p className="mx-auto mt-5 max-w-3xl text-slate-400">
           A showcase of my engineering and software projects — embedded systems,
           robotics, automation, mechanical design and Proteus simulations, alongside
-          full stack web apps, online payment systems, and AI computer-vision models.
+          full stack web apps, Arabic e-commerce stores, online payment systems,
+          and AI computer-vision models.
         </p>
       </div>
 
@@ -188,11 +226,22 @@ export default function Projects() {
             className="group overflow-hidden rounded-3xl border border-white/10 bg-[#151515] shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400/30 hover:shadow-cyan-500/20"
           >
             <div className="relative h-64 overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-              />
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              ) : (
+                <div
+                  dir="rtl"
+                  className={`flex h-full w-full flex-col items-center justify-center bg-gradient-to-br ${project.accent} p-8 text-center transition duration-700 group-hover:scale-110`}
+                >
+                  <span className="mb-3 text-sm font-black text-white/80">{project.market}</span>
+                  <span className="text-4xl font-black text-white drop-shadow-lg">{project.title.split(" — ")[0]}</span>
+                  <span className="mt-2 text-sm font-bold text-white/90">{project.title.split(" — ")[1]}</span>
+                </div>
+              )}
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
